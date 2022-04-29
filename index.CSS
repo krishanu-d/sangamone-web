@@ -1,0 +1,30 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: #dab785;
+  padding: 5px;
+  color: #04395e;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #031d44;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: large;
+}
+.fc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.fi {
+  background-color: #04395e;
+  color: #dab785;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WA18</title>
+    <style>
+      #searching {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="searching">Search</label>
+    <input
+      type="search"
+      id="searching"
+      name="searching"
+      onkeyup="search_it()"
+      type="text"
+    />
+
+    <ul>
+      <li>Afghanistan</li>
+      <li>Albania</li>
+      <li>Austria</li>
+      <li>Argentina</li>
+      <li>Bahamas</li>
+      <li>Bahrain</li>
+      <li>Bangladesh</li>
+      <li>Belarus</li>
+      <li>Belgium</li>
+      <li>Bhutan</li>
+      <li>Botswana</li>
+      <li>Brazil</li>
+      <li>Cambodia</li>
+      <li>Canada</li>
+      <li>Chile</li>
+      <li>China</li>
+      <li>Colombia</li>
+      <li>Costa Rica</li>
+      <li>Croatia</li>
+      <li>Denmark</li>
+      <li>Dominica</li>
+      <li>Ecuador</li>
+      <li>Egypt</li>
+      <li>Estonia</li>
+      <li>Fiji</li>
+      <li>Finland</li>
+      <li>France</li>
+      <li>Georgia</li>
+      <li>Germany</li>
+      <li>Ghana</li>
+      <li>Greece</li>
+      <li>Haiti</li>
+      <li>Hungary</li>
+      <li>Iceland</li>
+      <li>India</li>
+      <li>Indonasia</li>
+      <li>Iraq</li>
+      <li>Iran</li>
+      <li>Ireland</li>
+      <li>Italy</li>
+      <li>Jamaica</li>
+      <li>Japan</li>
+      <li>Kenya</li>
+      <li>Kuwai</li>
+      <li>Laos</li>
+      <li>Lebanon</li>
+      <li>Liberia</li>
+      <li>Libya</li>
+      <li>Luxembourg</li>
+      <li>Madagascar</li>
+      <li>Malaysia</li>
+      <li>Maldives</li>
+      <li>Mali</li>
+      <li>Mauritius</li>
+      <li>Mexico</li>
+      <li>Myanmar</li>
+      <li>Nepal</li>
+      <li>Netherlands</li>
+      <li>New Zealand</li>
+      <li>Nigeria</li>
+      <li>Oman</li>
+      <li>Pakistan</li>
+      <li>Peru</li>
+      <li>Poland</li>
+      <li>Purtgal</li>
+      <li>Qatar</li>
+      <li>Russia</li>
+      <li>Slovania</li>
+      <li>Thailand</li>
+      <li>Uganda</li>
+      <li>Venezuela</li>
+      <li>Yemen</li>
+      <li>Zimbabwe</li>
+    </ul>
+    <script>
+      function search_it() {
+        let input = document.getElementById("searching").value;
+        input = input.toLowerCase();
+        let x = document.getElementsByTagName("li");
+        for (var i = 0; i < x.length; i++) {
+          if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+          } else {
+            x[i].style.display = "list-item";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
