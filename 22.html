@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <style>
+    body {
+      background: rgb(255, 255, 0);
+    }
     .cont {
-      max-width: 500px;
-      margin: auto;
+      font-family: "Poppins";
+      background-color: aquamarine;
+      margin: 50px;
+      padding: 1em;
     }
     input {
       width: 30%;
@@ -37,11 +46,21 @@
     }
 
     input[type="submit"]:hover {
-      background-color: #45a049;
+      background-color: #101f11;
+    }
+    .heading {
+      font-family: "Poppins";
+      font-size: 50px;
+      color: azure;
+      display: flex;
+      background: #101f1f;
+      align-items: center;
+      justify-content: center;
     }
   </style>
   <body>
-    <div class="cont">
+    <div class="heading">Form for PUC Admission</div>
+    <div align="center" class="cont">
       <form>
         <label for="fname">First name:</label><br />
         <input type="text" id="fname" name="fname" required /><br />
